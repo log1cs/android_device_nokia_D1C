@@ -176,6 +176,10 @@ PRODUCT_PACKAGES += \
     android.hardware.thermal@1.0-service \
     thermal.msm8937
 
+# USB
+PRODUCT_PACKAGES += \
+    android.hardware.usb@1.0-service.basic
+
 # VNDK
 PRODUCT_PACKAGES += \
     libstdc++.vendor
