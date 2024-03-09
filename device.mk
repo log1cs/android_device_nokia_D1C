@@ -189,5 +189,21 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     libstdc++.vendor
 
+# Wi-Fi
+PRODUCT_PACKAGES += \
+    android.hardware.wifi@1.0-service \
+    dhcpcd.conf \
+    hostapd \
+    libcld80211 \
+    libqsap_sdk \
+    libQWiFiSoftApCfg \
+    libwifi-hal-ctrl \
+    libwifi-hal-qcom \
+    libwpa_client \
+    wcnss_service \
+    wificond \
+    wpa_supplicant \
+    wpa_supplicant.conf
+
 # Inherit the proprietary files
 $(call inherit-product, vendor/nokia/D1C/D1C-vendor.mk)
