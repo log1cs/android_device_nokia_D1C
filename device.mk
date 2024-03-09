@@ -205,5 +205,12 @@ PRODUCT_PACKAGES += \
     wpa_supplicant \
     wpa_supplicant.conf
 
+# Wi-Fi Display
+PRODUCT_PACKAGES += \
+    libnl
+
+PRODUCT_BOOT_JARS += \
+    WfdCommon
+
 # Inherit the proprietary files
 $(call inherit-product, vendor/nokia/D1C/D1C-vendor.mk)
