@@ -51,5 +51,9 @@ PRODUCT_PACKAGES += \
 PRODUCT_SOONG_NAMESPACES += \
     $(DEVICE_PATH)
 
+# VNDK
+PRODUCT_PACKAGES += \
+    libstdc++.vendor
+
 # Inherit the proprietary files
 $(call inherit-product, vendor/nokia/D1C/D1C-vendor.mk)
