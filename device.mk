@@ -80,6 +80,10 @@ PRODUCT_PACKAGES += \
     FMRadio \
     libfmjni
 
+# Health
+PRODUCT_PACKAGES += \
+    android.hardware.health@2.0-service
+
 # Soong
 PRODUCT_SOONG_NAMESPACES += \
     $(DEVICE_PATH)
