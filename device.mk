@@ -121,6 +121,9 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     netutils-wrapper-1.0
 
+# Overlays
+PRODUCT_ENFORCE_RRO_TARGETS := *
+
 # OMX
 PRODUCT_PACKAGES += \
     libc2dcolorconvert \
