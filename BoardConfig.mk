@@ -9,6 +9,9 @@ DEVICE_PATH := device/nokia/D1C
 # APEXes
 OVERRIDE_TARGET_FLATTEN_APEX := true
 
+# Assertions
+TARGET_OTA_ASSERT_DEVICE := ND1,PLE,D1C
+
 # Architecture
 TARGET_ARCH := arm64
 TARGET_ARCH_VARIANT := armv8-a
