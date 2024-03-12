@@ -81,6 +81,10 @@ TARGET_BOARD_PLATFORM := msm8937
 # HIDL
 DEVICE_MANIFEST_FILE += $(DEVICE_PATH)/manifest.xml
 
+# Init
+TARGET_INIT_VENDOR_LIB ?= //$(DEVICE_PATH):libinit_D1C
+TARGET_RECOVERY_DEVICE_MODULES := libinit_D1C
+
 # Kernel
 BOARD_KERNEL_BASE := 0x80000000
 BOARD_KERNEL_CMDLINE := console=ttyHSL0,115200,n8 androidboot.console=ttyHSL0 androidboot.hardware=qcom
